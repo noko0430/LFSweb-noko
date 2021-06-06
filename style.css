@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height:100%;
+}
+
+body{
+    height: 100%;
+    font-family: "ヒラギノ角ゴ Pro W3";
+    font-size: 15px;
+    line-height: 25px;
+    color:#0D4951;
+}
+
+nav{
+    background-color: #FF9B0B;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    position: fixed;
+}
+
+nav ul{
+    text-align:center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family:"ヒラギノ角ゴ Pro";
+}
+
+nav li{
+    display: inline-block;
+    margin-right: 40px;
+}
+
+nav a{
+    text-decoration: none;
+    color:#F3FFFF;
+    font-size: 18px;
+}
+
+nav a:hover{
+    color:#FFE603;
+}
+
+
+header{
+    background-image: url(img/アセット3.png);
+    height:440px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position:top center;
+}
+header img{
+    height: 160px;
+    padding: 160px 0px;
+}
+
+.about{
+    background-color: #f3ffff;
+    height: 580px;
+}
+.about h2{
+    font-family: "ヒラギノ角 Stb W8";
+    font-size: 27px;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    text-decoration:underline wavy #ffe603;
+}
+.about p{
+    background-color: #f2f9fc;
+    width: 420px;
+    padding:40px;
+    margin: 10px auto 10px;
+}
+.about img{
+    height: 150px;
+    float:right;
+}
+
+.should h2{
+    font-family: "ヒラギノ角 Stb W8";
+    font-size: 27px;
+}
