@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height:100%;
+}
+
+body{
+    height: 100%;
+    font-family: "ヒラギノ角ゴ Pro";
+    font-weight: 300;
+    font-size: 105%;
+    line-height: 35px;
+    letter-spacing: 1px;
+    color:#0D4951;
+}
+
+nav{
+    background-color: #FF9B0B;
+    width: 100vw;
+    height: 50px;
+    position: fixed;
+    overflow: hidden;
+}
+
+nav ul{
+    text-align:center;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color:#F3FFFF;
+    padding: 1vh 2vw;
+    background-color: #ff9b0b;
+}
+
+nav a:hover{
+    color:#FFE603;
+}
+
+.everyday{
+    padding: 150px 15% 100px;
+    background-color: #f3ffff;
+    height: auto;
+}
+
+.title{
+    font-family: "ヒラギノ角ゴシック";
+    font-weight: 800;
+    font-size: 140%;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    border-left: 15px solid #ff9b0b;
+}
+.block{
+    font-family: "ヒラギノ角ゴシック";
+    color:#F3FFFF;
+    font-size: 26px;
+    background-color: #ff9c0b;
+    width: 160px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+    margin: 50px auto 20px;
+}
+.box{
+    display: flex;
+    padding: 20px 0px 10px 5vw;
+}
+
+.box:nth-child(even) {
+    flex-direction: row-reverse;
+    padding: 20px 5vw 50px 0px;
+}
+.box:nth-child(even) .img {
+    margin: 60px 0 0 10px;
+    justify-content: right;
+}
+.box:nth-child(even) h3 {
+    text-align: left;
+}
+
+.txt-box{
+    width: calc(100% - 320px);
+}
+.txt h3{
+    font-family: "ヒラギノ角ゴシック";
+    font-weight: 700;
+    font-size: 120%;
+    margin: 30px 0px 10px 0px;
+    text-align: right;
+}
+.img {
+    display: flex;
+    margin: 60px 10px 0 0 ;
+    height: 170px;
+    justify-content:center;
+  }
+
+.season{
+    padding: 100px 15%;
+    background-color: #e4f1f2;
+    height: auto;
+    margin: 0 auto;
+}
+
+.box2{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    position: center;
+    background-image: url(img/アセット15.png);
+    background-repeat: no-repeat;
+    background-size: 50vw;
+    background-position: center;
+}
+
+.box3{
+    width: 30vw;
+    padding: 2vw;
+    text-align: center;
+    margin:0 auto;
+}
+
+.txt2 h3{
+    font-family: "ヒラギノ角ゴシック";
+    font-weight: 700;
+    font-size: 120%;
+    margin-bottom: 5px;
+}
+
+.box3 p{
+    text-align: left;
+}
+
+.box3 img{
+    height: 11vw;
+}
+
+
+
+.pagetop2{
+    background-color: #e4f1f2;
+    height: auto;
+    padding: 80px 100px;
+    text-align: center;
+    align-content: stretch;
+}
+.pagetop2 img{
+    height: 90px;
+}
+
+footer{
+    text-align: center;
+    text-decoration: none;
+    color: #f3ffff;
+    background-color: #0D4951;
+    padding: 30px auto;
+}
+

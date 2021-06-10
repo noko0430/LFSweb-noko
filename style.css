@@ -9,43 +9,38 @@ html{
 
 body{
     height: 100%;
-    font-family: "ヒラギノ角ゴ Pro W3";
-    font-size: 15px;
-    line-height: 25px;
+    font-family: "ヒラギノ角ゴ Pro";
+    font-weight: 300;
+    font-size: 105%;
+    line-height: 35px;
+    letter-spacing: 1px;
     color:#0D4951;
 }
 
 nav{
+    overflow: hidden;
     background-color: #FF9B0B;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    width: 100%;
+    width: 100vw;
+    height: 50px;
     position: fixed;
+    z-index: 3;
 }
-
 nav ul{
     text-align:center;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    font-family:"ヒラギノ角ゴ Pro";
 }
-
 nav li{
     display: inline-block;
-    margin-right: 40px;
 }
-
 nav a{
+    display: block;
     text-decoration: none;
     color:#F3FFFF;
-    font-size: 18px;
+    padding: 1vh 2vw;
+    background-color: #ff9b0b;
 }
-
 nav a:hover{
     color:#FFE603;
 }
-
-
 header{
     background-image: url(img/アセット3.png);
     height:440px;
@@ -57,31 +52,130 @@ header img{
     height: 160px;
     padding: 160px 0px;
 }
-
 .about{
     background-color: #f3ffff;
-    height: 580px;
-}
-.about h2{
-    font-family: "ヒラギノ角 Stb W8";
-    font-size: 27px;
-    text-align: center;
-    padding-top: 80px;
-    padding-bottom: 40px;
-    text-decoration:underline wavy #ffe603;
-}
-.about p{
-    background-color: #f2f9fc;
-    width: 420px;
-    padding:40px;
-    margin: 10px auto 10px;
-}
-.about img{
-    height: 150px;
-    float:right;
+    height: auto;
+    padding: 100px 15% 150px;
 }
 
+.about h2{
+    font-family: "ヒラギノ角ゴシック";
+    font-weight: 800;
+    font-size: 140%;
+    text-align: center;
+    padding-bottom: 40px;
+    background-image: url(img/アセット25.png);
+    background-repeat: no-repeat;
+    background-position-y: 35px;
+    background-position-x: center;
+    background-size:100mm;
+}
+.bun{
+    background-color: #e4f1f2;
+    position: relative;
+    width: 44vw;
+    margin: 0 auto;
+}
+.bun p{
+    padding:3vw;
+}
+
+.nayamu{
+    width: 30%;
+    position: absolute;
+    bottom:-80px;
+    right:0;
+}
+
+.should{
+    background-color: #e4f1f2;
+    height: auto;
+    padding: 100px 14%;
+}
 .should h2{
-    font-family: "ヒラギノ角 Stb W8";
-    font-size: 27px;
+    font-family: "ヒラギノ角ゴシック";
+    font-weight: 800;
+    font-size: 140%;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    border-left: 15px solid #ff9b0b;
+}
+.should h3{
+    font-family: "ヒラギノ角ゴシック";
+    font-weight: 800;
+    font-size: 120%;
+    margin: 30px 0px 0px 0px;
+}
+
+.should p{
+    margin:10px;
+}
+
+.detail{
+    background-color: #f3ffff;
+    height: auto;
+    padding: 100px 15%;
+}
+.detail h2{
+    font-family: "ヒラギノ角ゴシック";
+    font-weight: 800;
+    font-size: 30px;
+    text-align: center;
+}
+
+.link{
+    text-align: center;
+    
+}
+.link2{
+    display: inline-block;
+    margin:7vw 5vw;
+}
+
+.link2 li{
+    text-align: center;
+    list-style: none;
+}
+
+.link2 a{
+    text-decoration: none;
+    display: inline-block;
+    color:#F3FFFF;
+    font-family: "ヒラギノ角ゴシック";
+    font-weight: 600;
+    font-size: 20px;
+    background-color: #ff9b0b;
+    box-shadow:inset 0px 0px 0px 2px #ff9b0b,inset 0px 0px 0px 3px #f3ffff;
+    border-radius: 20px;
+    padding: 12px 45px;
+}
+
+.link2 p{
+    padding-bottom: 10px;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.link2 a:hover{
+    background-color: #ffe603;
+    box-shadow:inset 0px 0px 0px 2px #ffe603,inset 0px 0px 0px 3px #f3ffff;
+    transition: 0.5s;
+}
+
+.pagetop{
+    background-color: #f3ffff;
+    height: auto;
+    padding: 80px 100px;
+    text-align: center;
+}
+.pagetop img{
+    height: 90px;
+}
+
+footer{
+    text-align: center;
+    text-decoration: none;
+    color: #f3ffff;
+    background-color: #0D4951;
+    padding: 30px auto;
 }
