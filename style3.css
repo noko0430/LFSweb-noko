@@ -227,3 +227,234 @@ footer{
     padding: 30px auto;
 }
 
+
+@media screen and (max-width: 480px){
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    html{
+        height:100%;
+    }
+    
+    body{
+        height: 100%;
+        font-family: "ヒラギノ角ゴ Pro";
+        font-weight: 300;
+        font-size: 105%;
+        line-height: 35px;
+        letter-spacing: 1px;
+        color:#0D4951;
+    }
+    
+    nav{
+        background-color: #FF9B0B;
+        width: 100vw;
+        height: 50px;
+        position: fixed;
+        overflow: hidden;
+        z-index: 4;
+    }
+    
+    nav ul{
+        text-align:center;
+    }
+    
+    nav li{
+        display: inline-block;
+    }
+    
+    nav a{
+        display: block;
+        text-decoration: none;
+        color:#F3FFFF;
+        padding: 1vh 2vw;
+        background-color: #ff9b0b;
+    }
+    
+    nav a:hover{
+        color:#FFE603;
+    }
+    
+    .process{
+        padding: 120px 15% 70px;
+        background-color: #e4f1f2;
+        height: auto;
+    }
+    
+    .title{
+        font-family: "ヒラギノ角ゴシック";
+        font-weight: 800;
+        font-size: 140%;
+        margin-bottom: 50px;
+        padding-left: 20px;
+        border-left: 15px solid #ff9b0b;
+    }
+    
+    .subtitle{
+        font-family: "ヒラギノ角ゴシック";
+        font-weight: 700;
+        font-size: 130%;
+        margin-bottom: 5px;
+    }
+    
+    .pic{
+        text-align: center;
+        padding-top: 30px;
+    }
+    
+    .role{
+        padding: 70px 15%;
+        background-color: #f3ffff;
+        height: auto;
+    }
+    
+    .box{
+        display: flex;
+        padding: 10px 0px 10px 30vw;
+    }
+    
+    .box:nth-child(even) {
+        flex-direction: row-reverse;
+        padding: 10px 30vw 10px 0px;
+    }
+    
+    .box:nth-child(even) h3 {
+        text-align: left;
+    }
+    
+    .txt h3{
+        font-family: "ヒラギノ角ゴシック";
+        font-weight: 700;
+        font-size: 120%;
+        margin: 30px 0px 10px 0px;
+        text-align: right;
+    }
+    .cleansing{
+        background-image: url(img/アセット17.png);
+        background-repeat: no-repeat;
+        background-size: 22vh;
+        background-position: 50% 50%;
+    }
+    .sengan{
+        background-image: url(img/アセット18.png);
+        background-repeat: no-repeat;
+        background-size: 22vh;
+        background-position: 50% 50%;
+    }
+    .toner{
+        background-image: url(img/アセット19.png);
+        background-repeat: no-repeat;
+        background-size: 22vh;
+        background-position: 50% 50%;
+    }
+    
+    .essence{
+        background-image: url(img/アセット20.png);
+        background-repeat: no-repeat;
+        background-size: 22vh;
+        background-position: 50% 50%;
+    }
+    
+    .milk{
+        background-image: url(img/アセット21.png);
+        background-repeat: no-repeat;
+        background-size: 22vh;
+        background-position: 50% 50%;
+    }
+    
+    .cream{
+        background-image: url(img/アセット22.png);
+        background-repeat: no-repeat;
+        background-size: 22vh;
+        background-position: 50% 50%;
+    }
+    
+    .custom{
+        padding: 0px 23% 100px;
+        background-color: #f3ffff;
+        height: auto;
+    }
+    
+    .custom2{
+        display: inline-block;
+    }
+    
+    .custompic{
+        display: inline-block;
+    }
+    
+    .customp{
+        display: inline-block;
+        margin-left: 2vw;
+    }
+    
+    .customp h3{
+        font-family: "ヒラギノ角ゴシック";
+        font-weight: 700;
+        font-size: 120%;
+    }
+    
+    
+    .component{
+        padding: 90px 15%;
+        background-color: #e4f1f2;
+        height: auto;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    
+    .component h2{
+        margin-bottom: 30px;
+    }
+    
+    .box2{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: stretch;
+        position: center;
+    }
+    
+    .box3{
+        width: 270px;
+        height: 250px;
+        text-align: center;
+        margin:30px;
+        border: solid #ff9b0b 2px;
+        background-color: #f3ffff;
+    }
+    
+    .txt2 h3{
+        font-family: "ヒラギノ角ゴシック";
+        font-weight: 700;
+        font-size: 22px;
+        color: #f3ffff;
+        line-height: 50px;
+        background-color: #ff9b0b;
+    }
+    
+    .box3 p{
+        padding: 25px;
+        text-align: justify;
+    }
+    
+    .pagetop2{
+        background-color: #e4f1f2;
+        height: auto;
+        padding: 80px 100px;
+        text-align: center;
+        align-content: stretch;
+    }
+    .pagetop2 img{
+        height: 90px;
+    }
+    
+    footer{
+        text-align: center;
+        text-decoration: none;
+        color: #f3ffff;
+        background-color: #0D4951;
+        padding: 30px auto;
+    }
+}

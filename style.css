@@ -17,40 +17,45 @@ body{
     color:#0D4951;
 }
 
-nav{
+.btn{
+    display: none;
+}
+
+.nav{
     overflow: hidden;
     background-color: #FF9B0B;
     width: 100vw;
-    height: 50px;
+    padding: 0.5vw;
     position: fixed;
     z-index: 3;
 }
-nav ul{
+.nav ul{
     text-align:center;
 }
-nav li{
+.nav li{
     display: inline-block;
 }
-nav a{
+.nav a{
     display: block;
     text-decoration: none;
     color:#F3FFFF;
     padding: 1vh 2vw;
     background-color: #ff9b0b;
 }
-nav a:hover{
+.nav a:hover{
     color:#FFE603;
 }
 header{
     background-image: url(img/アセット3.png);
-    height:440px;
+    height:30vw;
     text-align: center;
     background-repeat: no-repeat;
     background-position:top center;
+    background-size: 100%;
 }
 header img{
-    height: 160px;
-    padding: 160px 0px;
+    height: 15vw;
+    margin: 10vw 0px;
 }
 .about{
     background-color: #f3ffff;
@@ -143,7 +148,7 @@ header img{
     color:#F3FFFF;
     font-family: "ヒラギノ角ゴシック";
     font-weight: 600;
-    font-size: 20px;
+    font-size: 120%;
     background-color: #ff9b0b;
     box-shadow:inset 0px 0px 0px 2px #ff9b0b,inset 0px 0px 0px 3px #f3ffff;
     border-radius: 20px;
@@ -172,10 +177,165 @@ header img{
     height: 90px;
 }
 
+.pagetop:hover{
+    opacity: 0.5 ;
+}
+
 footer{
     text-align: center;
     text-decoration: none;
     color: #f3ffff;
     background-color: #0D4951;
     padding: 30px auto;
+}
+
+
+@media screen and (max-width: 480px){
+    body{
+        font-size: 80%;
+        line-height: 2em;
+        letter-spacing: 1px;
+    }
+
+    .nav_toggle {
+        display: flex;
+        position: fixed;
+        flex-flow: column;
+        justify-content:space-around;
+        right: 3vw;
+        top: 1px;
+        bottom: 3px;
+        width: 8vw;
+        height: 10vw;
+        z-index:5;
+        cursor: pointer;
+        -webkit-transition: all 400ms;
+        transition: all 400ms;
+    }
+    .btn_line1{
+        display: flex;
+        width: 100%;
+        height: 2px;
+        background-color: #f3ffff;
+    }
+    .btn_line2{
+        display: flex;
+        width: 100%;
+        height: 2px;
+        background-color: #f3ffff;
+    }
+    .btn_line3{
+        display: flex;
+        width: 100%;
+        height: 2px;
+        background-color: #f3ffff;
+    }
+
+    .btn_line1.open{
+        transform: translateY(10px) rotate(-45deg);
+        }
+    .btn_line2.open{
+        opacity: 0;
+        }
+    .btn_line3.open{
+        transform: translateY(-12px) rotate(45deg);
+        }
+
+    .nav{
+        height: 10vw;
+    }
+    
+    .nav ul{
+        position: fixed;
+        display: flex;
+        width: 40%;
+        height: 100%;
+        padding-top: 10vw;
+        right: 0;
+        top:0;
+        flex-direction: column;
+        color: #f3ffff;
+        background-color: #0D4951;
+        right:-50%;
+    }
+    .nav ul.open{
+        right:0;
+    }
+    
+    .nav li{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .nav a{
+        text-decoration: none;
+        color:#F3FFFF;
+        padding: 9vw;
+        background-color: #0D4951;
+    }
+   
+ 
+    header{
+        background-image: url(img/アセット3.png);
+        height:55vw;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: auto;
+    }
+    header img{
+        height: 20vw;
+        padding: 15vw 0px;
+    }
+
+    .about{
+        padding: 50px 5% 100px;
+    }
+    
+    .about h2{
+        font-size: 120%;
+        text-align: center;
+        background-position-y: 24px;
+        background-size:60mm;
+        padding-bottom: 20px;
+    }
+    .bun{
+        background-color: #f3ffff;
+        width: 100%;
+    }
+    .bun p{
+        padding:0vw;
+    }
+    
+    .should{
+        background-color: #e4f1f2;
+        height: auto;
+        padding: 60px 10%;
+    }
+    .should h2{
+        margin-bottom: 20px;
+    }
+    
+    .detail{
+        padding: 60px 10%;
+    }
+    .detail h2{
+        font-size: 140%;
+    }
+    
+    .link2{
+        margin:5vw;
+    }
+    
+    .pagetop{
+        background-color:#f3ffff;
+        height: 0;
+    }
+    .pagetop img{
+        height: 60px;
+        position: fixed;
+        bottom: 50px;
+        right: 16px;
+    }
+    
 }
