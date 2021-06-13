@@ -86,7 +86,7 @@ header img{
 }
 
 .nayamu{
-    width: 30%;
+    width: 10vw;
     position: absolute;
     bottom:-80px;
     right:0;
@@ -289,7 +289,7 @@ footer{
     }
 
     .about{
-        padding: 50px 5% 100px;
+        padding: 50px 5% 20vw;
     }
     
     .about h2{
@@ -300,11 +300,19 @@ footer{
         padding-bottom: 20px;
     }
     .bun{
+        position: unset;
         background-color: #f3ffff;
         width: 100%;
     }
     .bun p{
+        display: inline;
         padding:0vw;
+    }
+    .nayamu{
+        float: right;
+        width: 25vw;
+        height: 25vw;
+        position: unset;
     }
     
     .should{

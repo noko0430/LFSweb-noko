@@ -56,7 +56,7 @@ nav a:hover{
     font-family: "ヒラギノ角ゴシック";
     font-weight: 800;
     font-size: 140%;
-    margin-bottom: 50px;
+    margin-bottom: 5vw;
     padding-left: 20px;
     border-left: 15px solid #ff9b0b;
 }
@@ -72,6 +72,9 @@ nav a:hover{
     text-align: center;
     padding-top: 30px;
 }
+.pic img{
+    width: 100%;
+}
 
 .role{
     padding: 70px 15%;
@@ -81,12 +84,12 @@ nav a:hover{
 
 .box{
     display: flex;
-    padding: 10px 0px 10px 30vw;
+    padding: 10px 0px 10px 20vw;
 }
 
 .box:nth-child(even) {
     flex-direction: row-reverse;
-    padding: 10px 30vw 10px 0px;
+    padding: 10px 20vw 10px 0px;
 }
 
 .box:nth-child(even) h3 {
@@ -99,6 +102,12 @@ nav a:hover{
     font-size: 120%;
     margin: 30px 0px 10px 0px;
     text-align: right;
+}
+
+.ex p{
+    font-size: 80%;
+    line-height: 25px;
+    margin-right: 30%;
 }
 .cleansing{
     background-image: url(img/アセット17.png);
@@ -141,21 +150,26 @@ nav a:hover{
 }
 
 .custom{
-    padding: 0px 23% 100px;
+    padding: 50px 0 90px;
     background-color: #f3ffff;
     height: auto;
+    margin: 0 auto;
 }
 
 .custom2{
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    flex-direction:row-reverse;
 }
 
-.custompic{
-    display: inline-block;
+.custom2 img{
+    display: flex;
+    width: 13%;
 }
 
 .customp{
-    display: inline-block;
+    display: flex;
+    flex-direction:column;
     margin-left: 2vw;
 }
 
@@ -164,10 +178,13 @@ nav a:hover{
     font-weight: 700;
     font-size: 120%;
 }
+.pc_hid{
+    display: none;
+}
 
 
 .component{
-    padding: 90px 15%;
+    padding: 90px 10%;
     background-color: #e4f1f2;
     height: auto;
     margin: 0 auto;
@@ -181,15 +198,16 @@ nav a:hover{
 .box2{
     display: flex;
     flex-wrap: wrap;
-    align-content: stretch;
-    position: center;
+    justify-content: center;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 
 .box3{
-    width: 270px;
-    height: 250px;
+    width: 250px;
+    height:240px;
     text-align: center;
-    margin:30px;
+    margin:20px;
     border: solid #ff9b0b 2px;
     background-color: #f3ffff;
 }
@@ -197,14 +215,14 @@ nav a:hover{
 .txt2 h3{
     font-family: "ヒラギノ角ゴシック";
     font-weight: 700;
-    font-size: 22px;
+    font-size: 120%;
     color: #f3ffff;
     line-height: 50px;
     background-color: #ff9b0b;
 }
 
 .box3 p{
-    padding: 25px;
+    padding:20px 20px 0vw;
     text-align: justify;
 }
 
@@ -229,23 +247,11 @@ footer{
 
 
 @media screen and (max-width: 480px){
-    * {
-        margin: 0;
-        padding: 0;
-    }
-    
-    html{
-        height:100%;
-    }
     
     body{
-        height: 100%;
-        font-family: "ヒラギノ角ゴ Pro";
-        font-weight: 300;
-        font-size: 105%;
-        line-height: 35px;
+        font-size: 80%;
+        line-height: 2em;
         letter-spacing: 1px;
-        color:#0D4951;
     }
     
     nav{
@@ -278,14 +284,10 @@ footer{
     }
     
     .process{
-        padding: 120px 15% 70px;
-        background-color: #e4f1f2;
-        height: auto;
+        padding: 90px 5% 50px;
     }
     
     .title{
-        font-family: "ヒラギノ角ゴシック";
-        font-weight: 800;
         font-size: 140%;
         margin-bottom: 50px;
         padding-left: 20px;
@@ -293,168 +295,139 @@ footer{
     }
     
     .subtitle{
-        font-family: "ヒラギノ角ゴシック";
-        font-weight: 700;
-        font-size: 130%;
-        margin-bottom: 5px;
+        font-size: 120%;
+        margin-bottom: 0px;
     }
-    
+
     .pic{
-        text-align: center;
-        padding-top: 30px;
+        padding-top: 8vw;
     }
     
     .role{
-        padding: 70px 15%;
-        background-color: #f3ffff;
-        height: auto;
+        padding: 50px 5%;
     }
     
     .box{
-        display: flex;
-        padding: 10px 0px 10px 30vw;
+        padding: 50px 0px 50px 8vw;
     }
     
     .box:nth-child(even) {
-        flex-direction: row-reverse;
-        padding: 10px 30vw 10px 0px;
-    }
-    
-    .box:nth-child(even) h3 {
-        text-align: left;
+        padding: 10px 8vw 10px 0px;
     }
     
     .txt h3{
-        font-family: "ヒラギノ角ゴシック";
-        font-weight: 700;
-        font-size: 120%;
-        margin: 30px 0px 10px 0px;
-        text-align: right;
+        margin: 10px 0 5px;
+    }
+    .ex p{
+        font-size: 50%;
+        line-height: 20px;
     }
     .cleansing{
-        background-image: url(img/アセット17.png);
-        background-repeat: no-repeat;
-        background-size: 22vh;
-        background-position: 50% 50%;
+        background-size: 35%;
+        background-position: center;
     }
     .sengan{
-        background-image: url(img/アセット18.png);
-        background-repeat: no-repeat;
-        background-size: 22vh;
-        background-position: 50% 50%;
+        background-size: 35%;
+        background-position: center;
     }
     .toner{
-        background-image: url(img/アセット19.png);
-        background-repeat: no-repeat;
-        background-size: 22vh;
-        background-position: 50% 50%;
+        background-size: 35%;
+        background-position: center;
+
     }
     
     .essence{
-        background-image: url(img/アセット20.png);
-        background-repeat: no-repeat;
-        background-size: 22vh;
-        background-position: 50% 50%;
+        background-size: 35%;
+        background-position: center;
     }
     
     .milk{
-        background-image: url(img/アセット21.png);
-        background-repeat: no-repeat;
-        background-size: 22vh;
-        background-position: 50% 50%;
+        background-size: 35%;
+        background-position: center;
     }
     
     .cream{
-        background-image: url(img/アセット22.png);
-        background-repeat: no-repeat;
-        background-size: 22vh;
-        background-position: 50% 50%;
+        background-size: 35%;
+        background-position: center;
     }
     
     .custom{
-        padding: 0px 23% 100px;
-        background-color: #f3ffff;
-        height: auto;
+        padding: 0px 10% 50px;
     }
     
     .custom2{
-        display: inline-block;
+        display: flex;
+        flex-direction:column-reverse;
+        align-items:center
     }
     
-    .custompic{
-        display: inline-block;
+    .custom2 img{
+        width: 40%;
+        display: flex;
     }
     
     .customp{
-        display: inline-block;
-        margin-left: 2vw;
+        display: flex;
+        flex-direction:none;
+        justify-content: center;
+        margin-left: unset;
+        background-color: #e4f1f2;
+        padding: 1vw 5vw;
+        border-radius: 30px;
     }
     
     .customp h3{
         font-family: "ヒラギノ角ゴシック";
         font-weight: 700;
         font-size: 120%;
+        text-align: center;
+        margin: 10px 0 5px;
+    }
+    .pc_hid{
+        display: block;
+    }
+
+    .customp p{
+        font-size: 60%;
+        margin:0 auto;
     }
     
     
     .component{
-        padding: 90px 15%;
-        background-color: #e4f1f2;
-        height: auto;
-        margin: 0 auto;
-        overflow: hidden;
+        padding: 50px 5%;
     }
     
     .component h2{
-        margin-bottom: 30px;
-    }
-    
-    .box2{
-        display: flex;
-        flex-wrap: wrap;
-        align-content: stretch;
-        position: center;
+        font-size: 120%;
+        margin-bottom: 0px;
     }
     
     .box3{
-        width: 270px;
-        height: 250px;
-        text-align: center;
-        margin:30px;
-        border: solid #ff9b0b 2px;
-        background-color: #f3ffff;
+        width: 40%;
+        height: 180px;
+        margin:4%;
     }
     
     .txt2 h3{
-        font-family: "ヒラギノ角ゴシック";
-        font-weight: 700;
-        font-size: 22px;
-        color: #f3ffff;
-        line-height: 50px;
-        background-color: #ff9b0b;
+        font-size: 100%;
+        line-height: 30px;
     }
     
     .box3 p{
-        padding: 25px;
+        padding:10px 10px 0vw;
+        font-size: 80%;
+        line-height: 2em;
         text-align: justify;
     }
     
     .pagetop2{
-        background-color: #e4f1f2;
-        height: auto;
-        padding: 80px 100px;
-        text-align: center;
-        align-content: stretch;
+        background-color:#e4f1f2;
+        height: 0;
     }
     .pagetop2 img{
-        height: 90px;
-    }
-    
-    footer{
-        text-align: center;
-        text-decoration: none;
-        color: #f3ffff;
-        background-color: #0D4951;
-        padding: 30px auto;
+        height: 60px;
+        position: fixed;
+        bottom: 50px;
+        right: 16px;
     }
 }
