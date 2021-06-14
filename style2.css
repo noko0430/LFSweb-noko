@@ -16,7 +16,9 @@ body{
     letter-spacing: 1px;
     color:#0D4951;
 }
-
+.btn{
+    display: none;
+}
 nav{
     background-color: #FF9B0B;
     width: 100vw;
@@ -169,32 +171,87 @@ footer{
         letter-spacing: 1px;
     }
     
-    nav{
-        background-color: #FF9B0B;
-        width: 100vw;
-        height: 50px;
+    .nav_toggle {
+        display: flex;
         position: fixed;
-        overflow: hidden;
+        flex-flow: column;
+        justify-content:space-around;
+        right: 3vw;
+        top: 1vw;
+        bottom: 1vw;
+        width: 8vw;
+        height: 8vw;
+        z-index:5;
+        cursor: pointer;
+    }
+    .btn_line1{
+        display: flex;
+        width: 100%;
+        height: 2px;
+        border-radius: 4px;
+        background-color: #f3ffff;
+    }
+    .btn_line2{
+        display: flex;
+        width: 100%;
+        height: 2px;
+        border-radius: 4px;
+        background-color: #f3ffff;
+    }
+    .btn_line3{
+        display: flex;
+        width: 100%;
+        height: 2px;
+        border-radius: 4px;
+        background-color: #f3ffff;
+    }
+
+    .open .btn_line1{
+        transform: translateY(10px) rotate(-315deg);
+        transition: 0.3s;
+        }
+    .open .btn_line2{
+        opacity: 0;
+        }
+    .open .btn_line3{
+        transform: translateY(-10px) rotate(315deg);
+        transition: 0.3s;
+        }
+
+    .nav{
+        height: 10vw;
+        transition: 0.3s;
     }
     
-    nav ul{
-        text-align:center;
+    .nav ul{
+        position: fixed;
+        display: flex;
+        width: 50%;
+        height: 100%;
+        padding-top: 10vw;
+        right: 0;
+        top:0;
+        flex-direction: column;
+        color: #f3ffff;
+        background-color: #0D4951;
+        right:-50%;
+        transition: 0.3s;
+    }
+    .nav ul.open{
+        right:0;
     }
     
-    nav li{
-        display: inline-block;
+    .nav li{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        transition: all 0.3s;
     }
-    
-    nav a{
-        display: block;
+    .nav a{
         text-decoration: none;
         color:#F3FFFF;
-        padding: 1vh 2vw;
-        background-color: #ff9b0b;
-    }
-    
-    nav a:hover{
-        color:#FFE603;
+        padding: 9vw;
+        background-color: #0D4951;
     }
     
     .everyday{
